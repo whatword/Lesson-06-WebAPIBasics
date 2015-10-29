@@ -1,6 +1,18 @@
 # WebAPI Basics
 
-How do you turn this on?
+and something useful
+
+# Who am I
+
+worked in SkyWatch (video streaming, IoT)
+
+working in Mozilla's performance team
+
+open source contributor (FFmpeg, Tornado, HIME ... etc.)
+
+enjoying making tools to solve my own problems
+
+[more ...](https://about.me/legnaleurc)
 
 # HTML
 
@@ -55,7 +67,7 @@ navigator;
 location;
 // 歷史記錄
 history;
-// 存取網頁介面
+// 存取網頁內容
 document;
 ```
 
@@ -107,6 +119,31 @@ i = i + 1;
 * 計時
 
 沒看 Console 就看不到
+
+# WebAPP 結構
+
+manifest.webapp
+
+```javascript
+{
+  "name": "hello_world",
+  "description": "A Hello World app",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Your name",
+    "url": "http://example.com"
+  },
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": {
+      "description": "Required to load remote content"
+    }
+  }
+}
+```
 
 # WebAPI 權限
 
@@ -300,3 +337,19 @@ setTimeout(function () {
 ```
 
 # Q&A
+
+# Assignment
+
+寫一個時鐘 app:
+
+1. 顯示現在時間(年月日時分秒) (30%)
+  1. 星期 (+5%)
+  2. 時區 (+5%)
+2. 碼表計時(啟動, 暫停, 歸零) (30%)
+3. 設定鬧鈴, 可在指定時間響鈴 (40%)
+
+# Turn In
+
+在 Github 開 pull request
+
+標題請包含學號
