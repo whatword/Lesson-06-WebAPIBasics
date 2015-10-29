@@ -1,25 +1,6 @@
 (function () {
   'use strict';
 
-  function wait (msDelay) {
-    return new Promise(function (resolve, reject) {
-      setTimeout(resolve, msDelay);
-    });
-  }
-
-  function printToBox (container, message) {
-    var p = document.createElement('p');
-    p.textContent = message;
-    container.appendChild(p);
-  }
-
-  function asyncWhile (next, fn) {
-    if (!next()) {
-      return Promise.resolve();
-    }
-    return fn().then(asyncWhile.bind(this, next, fn));
-  }
-
   function main () {
     var btn = document.querySelector('#start-btn');
     var box = document.querySelector('#out-box');
@@ -35,6 +16,25 @@
       }).then(function () {
         printToBox(box, 'done');
       });
+    });
+  }
+
+  function asyncWhile (next, fn) {
+    if (!next()) {
+      return Promise.resolve();
+    }
+    return fn().then(asyncWhile.bind(this, next, fn));
+  }
+
+  function printToBox (container, message) {
+    var p = document.createElement('p');
+    p.textContent = message;
+    container.appendChild(p);
+  }
+
+  function wait (msDelay) {
+    return new Promise(function (resolve, reject) {
+      setTimeout(resolve, msDelay);
     });
   }
 
