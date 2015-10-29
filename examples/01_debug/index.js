@@ -20,20 +20,24 @@
     return fn().then(asyncWhile.bind(this, next, fn));
   }
 
-  var btn = document.querySelector('#start-btn');
-  var box = document.querySelector('#out-box');
+  function main () {
+    var btn = document.querySelector('#start-btn');
+    var box = document.querySelector('#out-box');
 
-  btn.addEventListener('click', function () {
-    var i = 0;
-    asyncWhile(function () {
-      return i < 5;
-    }, function () {
-      printToBox(box, 'i = ' + i);
-      ++i;
-      return wait(1000);
-    }).then(function () {
-      printToBox(box, 'done');
+    btn.addEventListener('click', function () {
+      var i = 0;
+      asyncWhile(function () {
+        return i < 5;
+      }, function () {
+        printToBox(box, 'i = ' + i);
+        ++i;
+        return wait(1000);
+      }).then(function () {
+        printToBox(box, 'done');
+      });
     });
-  });
+  }
+
+  main();
 
 })();
