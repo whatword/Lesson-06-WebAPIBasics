@@ -150,6 +150,10 @@
 
 
   function main () {
+    if (!window.fetch) {
+      alert('minimal version requirement: Firefox 39, Chrome 42, Opera 29');
+      return;
+    }
     initializeLibraries();
     loadMarkdown('./pages.md').then(function (nSlides) {
       return new SlideController(nSlides);
