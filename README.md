@@ -7,8 +7,8 @@ Please see the [slide](https://map-ncu2015.github.io/Lesson-06-WebAPIBasics/).
 Please write a simple clock application, which has the following features.
 
 1. (30%) Display current time in **YYYY/MM/dd hh:mm:ss** format (e.g.: 2015/11/02 19:02:29), and update it every second.
-    1. (5%) Display week.
-    2. (5%) Display timezone.
+    1. (+5%) Display week.
+    2. (+5%) Display timezone.
 2. (30%) Stopwatch that display in **mm:ss.cc** (e.g.: 00:00.00). Users can click buttons to **start**, **pause** and **reset** the stopwatch.
     * **start**: Starts the timer, increases the timer every 1/100 second.
     * **pause**: Pauses the timer, the timer can be resumed by **start**.
