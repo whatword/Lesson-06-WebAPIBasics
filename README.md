@@ -26,6 +26,8 @@ Please write a simple clock application, which has the following features.
 
 Please create the pull request **before** the end of 2015/11/13 (UTC+8).
 
+If you turn in after 2015/11/13 and **before** the end of 2015/11/20 (UTC+8), your score will multiply with 80%.
+
 ### Hints
 
 1. You can use [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) to get the desired time.
