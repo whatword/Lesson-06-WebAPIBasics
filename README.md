@@ -22,6 +22,10 @@ Please write a simple clock application, which has the following features.
 2. Modify files in `simple_clock` directory.
 3. Create a pull request that have your student ID in the title.
 
+### Deadline
+
+Please create the pull request **before** the end of 2015/11/13 (UTC+8).
+
 ### Hints
 
 1. You can use [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) to get the desired time.
